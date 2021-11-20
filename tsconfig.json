@@ -1,0 +1,78 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@actions/*": [
+        "src/actions/*"
+      ],
+      "@reducers/*": [
+        "src/reducers/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@providers/*": [
+        "src/providers/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@images/*": [
+        "src/images/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@static/*": [
+        "public/static/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@sagas/*": [
+        "src/sagas/*"
+      ],
+      "@epics/*": [
+        "src/epics/*"
+      ],
+      "@selectors/*": [
+        "src/selectors/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

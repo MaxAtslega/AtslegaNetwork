@@ -1,0 +1,73 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "next",
+    "airbnb",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-unused-state": "off",
+    "react/prefer-stateless-function": "off",
+    "react/no-array-index-key": "warn",
+    "react/no-danger": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "no-restricted-imports": ["error", {
+      "patterns": [".*"]
+    }],
+    "prettier/prettier":  [
+      "error",
+      {
+        "trailingComma": "all",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": false,
+        "bracketSpacing": true,
+        "eslintIntegration": true,
+        "printWidth": 120
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-named-as-default": 0,
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-multi-assign": "off",
+    "no-var-keyword": 0,
+    "no-duplicate-variable": 0,
+    "no-trailing-whitespace": 0,
+    "no-console": "error",
+    "no-multi-spaces": "error",
+    "react/jsx-curly-brace-presence": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-script-url": "error",
+    "no-shadow": "off",
+    "camelcase": "off",
+    "react/jsx-props-no-spreading": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "plugins": ["import", "prettier", "react"]
+}
